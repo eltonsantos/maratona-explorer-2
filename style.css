@@ -1,0 +1,133 @@
+/* ============ Root ============ */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ============ Options themer ============ */
+
+html {
+  /* variáveis */
+  --bg-color: #EDF2FF;
+  --text-color: #00082F;
+  --primary-color: #4263EB;
+  --primary-color-dark: #364FC7
+}
+
+body {
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* Dark blue themer */
+
+body.dark-blue {
+  --bg-color: #00082F;
+  --text-color: #FFFFFF;
+}
+
+/* Pink themer */
+
+body.pink {
+  --bg-color: #FFF0F6;
+  --text-color: #1F000B;
+  --primary-color: #D6336C;
+  --primary-color-dark: #A61E4D;
+}
+
+/* Dark pink themer */
+
+body.dark-pink {
+ --bg-color: #1F000B;
+ --text-color: #FFF0F6;
+ --primary-color: #D6336C;
+ --primary-color-dark: #A61E4D;
+}
+
+/* ============ Users ============ */
+
+.container {
+  display: flex; 
+  flex-direction: column;
+  align-items: center; 
+  margin: 3.75rem 0px;
+}
+
+.container img {
+  height: 9.7875rem;
+  width: 9.7875rem;
+  padding: 0.23rem;
+
+  border-radius: 50%;
+  border: 0.25rem solid var(--primary-color);
+}
+
+h1 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+
+}
+
+.username {
+  font-family: 'Roboto mono', sans-serif;
+  margin-bottom: 3rem;
+  font-weight: 400;
+  font-size: 1.125rem;
+}
+
+/* ============ Links ============ */
+
+.container li  {
+  list-style:  none;
+  margin-bottom: 2rem;
+}
+
+.container li:nth-child(4){
+  margin-bottom: 0px;
+}
+
+.container li a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.3125rem;
+  width: 18.75rem;
+  font-size: 0.87rem;
+  border-radius: 0.375rem;
+
+  text-decoration: none;
+  font-weight: 700;
+  color: #FFFFFF;
+  background-color: var(--primary-color);
+
+  transition: background 400ms;
+}
+
+.container li a:hover {
+  background: var(--primary-color-dark);
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+/* ============ Footer ============ */
+ 
+.container footer{
+  margin-top: 3rem;
+  font-weight: 500;
+  font-size: 0.75rem;
+  opacity: 0.6;
+  transform: opacity 400ms;
+}
+
+.container footer:hover {
+  opacity: 1;
+}
+
+.container footer a {
+  text-decoration: none;
+  color: var(--text-color);
+  cursor: pointer;
+}
